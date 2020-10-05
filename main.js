@@ -3,7 +3,6 @@ let btn = document.querySelectorAll(".button");
 
 let paragraph = document.querySelector("p")
 
-
 btn.forEach(element => {
     element.addEventListener("click", onclick)
 
