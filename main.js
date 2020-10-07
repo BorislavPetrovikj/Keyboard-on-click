@@ -7,10 +7,10 @@ let paragraph = document.querySelector("p");
 btn.forEach(function (el) {
     el.addEventListener("click", function (e) {
         if (e.target.textContent == "Space") {
-            paragraph.innerText += " "
+            paragraph.textContent += " "
         }
         else {
-            paragraph.innerText += `${e.target.textContent.toLowerCase()}`
+            paragraph.textContent += `${e.target.textContent.toLowerCase()}`
         }
 
     });
