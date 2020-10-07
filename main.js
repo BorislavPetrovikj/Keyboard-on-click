@@ -1,21 +1,20 @@
 
 let btn = document.querySelectorAll(".button");
+let paragraph = document.querySelector("p");
 
-let paragraph = document.querySelector("p")
 
-btn.forEach(element => {
-    element.addEventListener("click", onclick)
 
-    function onclick() {
-        if (element.textContent == "Space") {
-            paragraph.innerHTML += " "
+btn.forEach(function (el) {
+    el.addEventListener("click", function (e) {
+        if (e.target.textContent == "Space") {
+            paragraph.innerText += " "
         }
         else {
-            paragraph.innerHTML += `${element.textContent.toLowerCase()}`
+            paragraph.innerText += `${e.target.textContent.toLowerCase()}`
         }
-    }
-});
 
+    });
+});
 
 
 
