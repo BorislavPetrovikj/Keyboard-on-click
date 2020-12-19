@@ -37,3 +37,7 @@ button:hover {
   background-color: hsl(199deg 10% 18% / 64%);
   opacity: 80%;
 }
+.keyboard, .keyboard-1, .keyboard-2, .keyboard-3 {
+    display: flex;
+    justify-content: center;
+}
